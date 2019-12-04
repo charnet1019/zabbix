@@ -1,5 +1,5 @@
-zabbix server version: 4.0.10
-mongodb version: 4.0.13
+### zabbix server version: 4.0.10 
+### mongodb version: 4.0.13
 
 mongodb帐号密码:
 /usr/local/public-ops/zabbix/.mongodb.passwd
