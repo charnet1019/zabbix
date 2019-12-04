@@ -7,3 +7,5 @@
 ##### 文件权限zabbix:zabbix 
 
 ##### /var/lib/zabbix/.dbshell   #文件权限zabbix:zabbix
+
+### zabbix用户需要有nopasswd sudo权限
