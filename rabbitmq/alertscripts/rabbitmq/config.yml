@@ -1,0 +1,11 @@
+hosts:
+
+  #myhost:
+  #  username: myuser
+  #  password: mypass
+
+defaults:
+    username: zbx_monitor
+    password: 5HEcH9Eveoz5Z0dL
+    port: 15672
+    ttl: 45

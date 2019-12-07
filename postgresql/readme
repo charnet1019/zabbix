@@ -1,0 +1,23 @@
+/usr/lib64/zabbix/modules/libzbxpgsql.so
+
+
+libzbxpgsql.so编译:
+libzbxpgsql源码包: /usr/src/v1.1.0.tar.gz
+zabbix源码包: /usr/src/zabbix-4.0.15.tar.gz
+安装编译工具:
+#yum -y install gcc make automake autoconf libtool m4 libconfig-devel postgresql-devel
+#cd /usr/src/libzbxpgsql-1.1.0
+#./autogen.sh
+#./configure --with-zabbix=/usr/src/zabbix-4.0.15
+#make
+#make install
+
+
+导入模板主机关联模板后，配置主机宏:
+{$PG_CONN} => host=10.10.10.11 port=5432 user=confluence password=xxxxxxxxxxxx connect_timeout=10
+{$PG_DB} => confluence
+
+自动发现规则配置过滤规则:
+{#DATABASE}  match ^confluence$
+
+http://cavaliercoder.com/libzbxpgsql/documentation/template-configuration/
