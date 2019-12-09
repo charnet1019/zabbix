@@ -142,7 +142,7 @@ def main():
     mysql = Mysql(hostname, username=username, password=password, port=port, debug=options.debug, force=options.force)
     try:
         value = mysql.get_value(options.key)
-        if value:
+        if value and value != "":
             print value
 
     except Exception as expt:

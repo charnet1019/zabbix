@@ -83,5 +83,5 @@ class filecache(object):
         now_unixtime = int(time.time())
         with open(self._cache_file, "w") as fd:
             fd.write(str(now_unixtime)+"\n")
-            fd.write(content)
+            fd.write(str(content))
             fd.close()

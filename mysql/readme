@@ -1,0 +1,8 @@
+如果出现/tmp/下的日志文件报IndexError: list index out of range请修改
+qiueer/python/filecache.py第38行，
+将resobj = str(alllines[1]).strip()
+修改为
+resobj = str(alllines[0]).strip()
+
+
+
